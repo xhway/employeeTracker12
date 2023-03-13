@@ -16,10 +16,14 @@
     ('Engineer', 80000, 4),
     ('Sales Leader', 68000, 5);
 
+
     INSERT INTO employees (first_name, last_name, role_id, manager_id)
     VALUES
-    ('Bruce', 'Banner', 1, 321),
-    ('Tony', 'Stark', 2, 309),
-    ('Matt', 'Murdock', 3, 111),
-    ('Miles', 'Morales', 4, 404),
-    ('Wade', 'Wilson', 5, 721);
+    ('Bruce', 'Wayne', 1, NULL),
+    ('Richard', 'Grayson', 2, 1),
+    ('Tim', 'Drake', 3, NULL),
+    ('Barbara', 'Gordon', 4, 3),
+    ('Luke', 'Fox', 5, NULL),
+    ('Terry', 'McGinnis', 6, 5),
+    ('Kat', 'Kane', 7, NULL),
+    ('Damian', 'Wayne', 8, 7);

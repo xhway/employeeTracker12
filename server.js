@@ -67,9 +67,9 @@ function options(){
 };
 //View all of the employees in the DB
 function viewEmployees(){
-    const query = 'SELECT * FROM employee';
+    const query = 'SELECT * FROM employees';
     db.query(query, function(err, res){
-        if(err)throw err;
+        if(err) throw err;
         console.log(res.length + 'employees found');
         console.table('All Employees', res);
         options();
@@ -87,7 +87,7 @@ function viewDepartments(){
 };
 //View all roles in the DB
 function viewRoles(){
-    const query = 'SELECT * FROM role';
+    const query = 'SELECT * FROM roles';
     db.query(query, function(err,res){
         if(err)throw err;
         console.table('All roles', res);
@@ -137,7 +137,7 @@ function addEmployee(){
                     
                 }
                 db.query(
-                    'INSERT INTO employee SET ?',
+                    'INSERT INTO employees SET ?',
                     {
                         first_name: answer.first_name,
                         last_name: answer.last_name,
