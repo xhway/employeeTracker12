@@ -166,7 +166,7 @@ function addDepartment(){
             db.query(
                 'INSERT INTO department SET ?',
                 {
-                    name: answer.newDepartment
+                    department_name: answer.newDepartment
                 });
             const query = 'SELECT * FROM department';
             db.query(query, function(err, res){
@@ -212,7 +212,7 @@ function addRole(){
                 }
             }
             db.query(
-                'INSERT INTO role SET ?',
+                'INSERT INTO roles SET ?',
                 {
                     title: answer.new_role,
                     salary: answer.salary,
@@ -238,5 +238,5 @@ function deleteEmployee(){
 };
 //Exit app
 function exitApp(){
-    connection.end();
+    db.end();
 };
