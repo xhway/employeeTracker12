@@ -18,8 +18,8 @@
 
     INSERT INTO employees (first_name, last_name, role_id, manager_id)
     VALUES
-    ('Bruce' 'Banner', 1, 321),
-    ('Tony' 'Stark', 2, 309),
+    ('Bruce', 'Banner', 1, 321),
+    ('Tony', 'Stark', 2, 309),
     ('Matt', 'Murdock', 3, 111),
     ('Miles', 'Morales', 4, 404),
-    ('Wade' 'Wilson', 5, 721);
+    ('Wade', 'Wilson', 5, 721);
